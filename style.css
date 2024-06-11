@@ -143,8 +143,8 @@ nav {
 
 section {
   padding-top: 32px;
-  height: 738px;
-  margin: 0 160px;
+  height: 675px;
+  margin: 0 120px;
   min-height: fit-content;
 }
 
@@ -254,3 +254,51 @@ section {
   gap: 16px;
 }
 
+/* about section */
+#about {
+  position: relative;
+}
+
+.about-container {
+  gap: 32px;
+  margin: 32px 0;
+}
+
+.about-details {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-container, .about-details {
+  display: flex;
+}
+
+.about-icon {
+  margin: 24px 0;
+  color: black;
+  text-decoration: none;
+}
+
+.arrow {
+  position: absolute;
+  right: -80px;
+  bottom: 40px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.details-container {
+  padding: 24px;
+  flex: 1;
+  background: white;
+  border-radius: 32px;
+  border: rgb(53, 53, 53) 1.5px solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 64px;
+  height: 80%;
+}
