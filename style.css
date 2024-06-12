@@ -17,7 +17,7 @@ hmtl {
   scroll-behavior: smooth;
 }
 
-#about, #skills, #projects, #contact {
+#about, #skills, #projects {
   position: relative;
 }
 
@@ -359,4 +359,42 @@ article {
 .projetct-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+/* contact section */
+#contacts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 32px;
+  border: rgb(53, 53, 53) 1.5px solid;
+  border-color: rgb(163, 163, 163);
+  background: white;
+  margin: 32px auto;
+  padding: 8px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px;
+}
+
+.contact p>a {
+  font-size: larger;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-icon {
+  cursor: default;
 }
