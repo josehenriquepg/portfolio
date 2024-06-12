@@ -17,6 +17,10 @@ hmtl {
   scroll-behavior: smooth;
 }
 
+#about, #skills, #projects, #contact {
+  position: relative;
+}
+
 /* Transition */
 a, 
 .btn {
@@ -255,10 +259,6 @@ section {
 }
 
 /* about section */
-#about {
-  position: relative;
-}
-
 .about-container {
   gap: 32px;
   margin: 32px 0;
@@ -304,11 +304,6 @@ section {
 }
 
 /* skills section */
-
-#skills {
-  position: relative;
-}
-
 .skill-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
@@ -342,4 +337,26 @@ article {
   display: flex;
   width: 160px;
   gap: 8px;
+}
+
+/* projects section */
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: white;
+}
+
+.project-img {
+  border-radius: 32px;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 16px;
+  color: black;
+}
+
+.projetct-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
 }
