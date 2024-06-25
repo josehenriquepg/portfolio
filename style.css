@@ -1,16 +1,14 @@
 /* Import fonts */
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;700;900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap";
 
 /* General */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 hmtl {
@@ -24,6 +22,8 @@ hmtl {
 /* Transition */
 a, 
 .btn {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
   transition: all 300ms ease;
 }
 
@@ -42,7 +42,7 @@ nav {
 .nav-links {
   gap: 32px;
   list-style: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .route {
@@ -52,12 +52,12 @@ nav {
 
 .route:hover {
   color: #1b4332;
-  text-decoration: underline;
   text-underline-offset: 10px;
 }
 
 .logo {
-  font-size: 26px;
+  font-weight: 600;
+  font-size: 32px;
 }
 
 .logo:hover {
@@ -191,6 +191,7 @@ section {
 }
 
 .title {
+  font-weight: 600;
   font-size: 48px;
   text-align: center;
 }
@@ -207,7 +208,7 @@ section {
 .icon {
   margin: 32px 12px;
   cursor: pointer;
-  color: #2d6a4f;
+  color: #52b788;
   text-decoration: none;
 }
 
@@ -226,7 +227,6 @@ section {
   border-radius: 32px;
 }
 
-.btn-color-1,
 .btn-color-2 {
   border: #081c15 1px solid;
 }
@@ -244,12 +244,14 @@ section {
 
 .btn-color-1:hover {
   background: #081c15;
+  border: #081c15 1px solid;
 }
 
 .btn-color-2 {
   background: none;
 }
 
+.btn-color-1,
 .btn-color-2:hover {
   border: #52b788 1px solid;
 }
@@ -275,7 +277,7 @@ section {
 
 .about-icon {
   margin: 24px 0;
-  color: #2d6a4f;
+  color: #52b788;
   text-decoration: none;
 }
 
@@ -319,7 +321,7 @@ section {
 
 .skill-icon {
   margin: 24px 6px 24px 0;
-  color: #2d6a4f;
+  color: #52b788;
   text-decoration: none;
 }
 
@@ -397,7 +399,7 @@ article {
 
 .contact-icon {
   cursor: default;
-  color: #2d6a4f;
+  color: #52b788;
 }
 
 /* footer */
