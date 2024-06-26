@@ -12,6 +12,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background: #f8f8f6;
+}
+
 #about, #skills, #projects {
   position: relative;
 }
@@ -43,12 +47,12 @@ nav {
 }
 
 .route {
-  color: #000000;
+  color: #262626;
   text-decoration: none;
 }
 
 .route:hover {
-  color: #1b4332;
+  color: #939498;
 }
 
 .logo {
@@ -82,7 +86,7 @@ nav {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: #000000;
+  background-color: #262626;
   transition: all 0.3 ease-in-out;
 }
 
@@ -90,7 +94,8 @@ nav {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #fff;
+  background: #f8f8f6;
+  border-radius: 10px;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -102,7 +107,7 @@ nav {
   padding: 10px;
   text-align: center;
   font-size: 16px;
-  color: #1b4332;
+  color: #262626;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -234,7 +239,7 @@ section {
 .btn-color-1,
 .btn-color-2:hover {
   background: #52b788;
-  color: #fff;
+  color: #EEEEEE;
 }
 
 .btn-color-1:hover {
@@ -302,48 +307,16 @@ section {
 
 /* skills section */
 .skill-title {
-  color: #469d89;
+  color: #363636;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 26px;
   margin-bottom: 16px;
-}
-
-.skills-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.skill-about-container {
-  display: flex;
-  gap: 16px;
-  margin: 32px 0;
-}
-
-.skill-details-container {
-  padding: 22px;
-  flex: 1; 
-  background: #fff;
-  border-radius: 32px;
-  border: #081c15 1px solid;
-  border-color: #b7e4c7;
-  text-align: center;
 }
 
 .skill-icon {
   margin: 24px 6px 24px 0;
   color: #52b788;
   text-decoration: none;
-}
-
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 16px;
-  justify-content: space-around;
-  align-items: center;
 }
 
 article {
@@ -367,10 +340,10 @@ article {
 
 .project-title {
   margin: 16px;
-  color: #469d89;
+  color: #363636;
 }
 
-.projetct-btn {
+.project-btn {
   color: #000;
   border: #081c15 1px solid;
 }
