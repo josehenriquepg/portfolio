@@ -1,5 +1,6 @@
 # Portfolio
 Telling you a little about myself, my skills and my experiences.
+**Check it out:** [Portfolio Page](https://josehenriquepg.github.io/portfolio/)
 ## 📚 Features
 - Onepage portfolio.
 - Responsive.
