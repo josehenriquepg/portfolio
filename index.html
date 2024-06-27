@@ -7,6 +7,7 @@
   <title>JH Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -14,10 +15,9 @@
     <div class="logo">José Henrique</div>
     <div>
       <ul class="nav-links">
-        <li><a class="route" href="#about">/sobre</a></li>
-        <li><a class="route" href="#skills">/habilidades</a></li>
-        <li><a class="route" href="#projects">/projetos</a></li>
-        <li><a class="route" href="#contacts">/contato</a></li>
+        <li><a class="route" id="about-route" href="#about">/sobre-mim</a></li>
+        <li><a class="route" id="projects-route" href="#projects">/projetos</a></li>
+        <li><a class="route" id="contacts-route" href="#contacts">/contato</a></li>
         <li>
           <input type="checkbox" class="checkbox" id="chk" />
           <label class="label" for="chk">
@@ -28,13 +28,10 @@
         </li>
         <li>
           <div class="language">
-            <div class="language-selected">
-              /português
-            </div>
-            <ul>
-              <li><a href="#" language="portuguese">/português</a></li>
-              <li><a href="#" language="english">/english</a></li>
-            </ul>
+            <select>
+              <option value="br">/português</option>
+              <option value="en">/english</option>
+            </select>
           </div>
         </li>
       </ul>
@@ -49,10 +46,9 @@
         <span></span>
       </div>
       <div class="links-menu">
-        <li><a href="#about" onclick="toggleMenu()">/sobre</a></li>
-        <li><a href="#skills" onclick="toggleMenu()">/habilidades</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">/projetos</a></li>
-        <li><a href="#contacts" onclick="toggleMenu()">/contato</a></li>
+        <li><a id="about-route" href="#about" onclick="toggleMenu()">/sobre-mim</a></li>
+        <li><a id="projects-route" href="#projects" onclick="toggleMenu()">/projetos</a></li>
+        <li><a id="contacts-route" href="#contacts" onclick="toggleMenu()">/contato</a></li>
         <li>
           <input type="checkbox" class="checkbox" id="chk" />
           <label class="label" for="chk">
@@ -63,13 +59,10 @@
         </li>
         <li>
           <div class="language">
-            <div class="language-selected">
-              /português
-            </div>
-            <ul>
-              <li><a href="#" class="br">/português</a></li>
-              <li><a href="#" class="en">/english</a></li>
-            </ul>
+            <select>
+              <option value="br">/português</option>
+              <option value="en">/english</option>
+            </select>
           </div>
         </li>
       </div>
@@ -80,9 +73,9 @@
       <img src="./assets/profile-pic.png" alt="Jose Henrique profile picture" />
     </div>
     <div class="profile-texts">
-      <p class="profile-text1">Olá, eu sou o</p>
+      <p class="profile-text1" id="profile-text1">Olá, eu sou o</p>
       <h1 class="title">José Henrique</h1>
-      <p class="profile-text2">Desenvolvedor Full Stack</p>
+      <p class="profile-text2" id="profile-text2">Desenvolvedor Full Stack</p>
       <div class="btn-container">
         <button class="btn btn-color-2">
           Baixar CV
@@ -98,8 +91,8 @@
     </div>
   </section>
   <section id="about">
-    <p class="about-text1">Conheça mais</p>
-    <h2 class="title about-title">Sobre mim</h2>
+    <p id="about-text1">Conheça mais</p>
+    <h2 class="title" id="about-title">Sobre mim</h2>
     <div class="section-container">
       <div class="pic-container">
         <img src="./assets/about-pic.png" alt="Profile picture" />
@@ -108,134 +101,31 @@
         <div class="about-container">
           <div class="details-container">
             <i class="about-icon fa-solid fa-award fa-2xl"></i>
-            <h3 class="experience">Experiência</h3>
-            <p class="experience-text">Desenvolvedor Full Stack<br />Freelancer</p>
+            <h3 id="experience">Experiência</h3>
+            <p id="experience-text">Desenvolvedor Full Stack</p>
           </div>
           <div class="details-container">
             <i class="about-icon fa-solid fa-user-graduate fa-2xl"></i>
-            <h3 class="education">Educação</h3>
-            <p class="education-text">Análise e Desenvolvimento de Sistemas<br />2024-2025</p>
+            <h3 id="education">Educação</h3>
+            <p id="education-text">Técnico em Informática e Análise e Desenvolvimento de Sistemas</p>
           </div>
         </div>
-        <div class="text-container">
-          Atuo na área da programação desde fevereiro de 2023, prestando serviços freelances, já trabalhei com diferentes clientes em diferentes projetos e níveis de dificuldade. Domino tecnologias como Javascript, Go, Python, MySQL e muitas outras. <br />
-          Sou um desenvolvedor full-stack dedicado a construir projetos do zero, desde o planejamento e design até a solução de problemas do mundo real com código.
-        </div>
-      </div>
-    </div>
-    <a class="arrow fa-solid fa-angles-down fa-2xl" href="./#skills"></a>
-  </section>
-  <section id="skills">
-    <p class="skills-text1">Explore minhas</p>
-    <h2 class="title skills-title">Habilidades</h2>
-    <div class="skills-container">
-      <div class="about-container">
-        <div class="details-container">
-          <h3 class="skill-title program-lang">Linguagens</h3>
-          <article>
-            <i class="skill-icon fa-solid fa-code fa-xl"></i>
-            <div>
-              <h4>HTML</h4>
-            </div>
-          </article>
-          <article>
-            <i class="skill-icon fa-solid fa-code fa-xl"></i>
-            <div>
-              <h4>CSS</h4>
-            </div>
-          </article>
-          <article>
-            <i class="skill-icon fa-solid fa-code fa-xl"></i>
-            <div>
-              <h4>Javascript</h4>
-            </div>
-          </article>
-          <article>
-            <i class="skill-icon fa-solid fa-code fa-xl"></i>
-            <div>
-              <h4>Python</h4>
-            </div>
-          </article>
-          <article>
-            <i class="skill-icon fa-solid fa-code fa-xl"></i>
-            <div>
-              <h4>Golang</h4>
-            </div>
-          </article>
-        </div>
-        <div class="details-container">
-          <h3 class="skill-title tools">Ferramentas</h3>
-          <article>
-            <i class="skill-icon fa-solid fa-screwdriver-wrench fa-xl"></i>
-            <div>
-              <h4>Typescript</h4>
-            </div>
-          </article>
-          <article>
-            <i class="skill-icon fa-solid fa-screwdriver-wrench fa-xl"></i>
-            <div>
-              <h4>Angular</h4>
-            </div>
-          </article>
-          <article>
-            <i class="skill-icon fa-solid fa-screwdriver-wrench fa-xl"></i>
-            <div>
-              <h4>NodeJS</h4>
-            </div>
-          </article>
-          <article>
-            <i class="skill-icon fa-solid fa-screwdriver-wrench fa-xl"></i>
-            <div>
-              <h4>NestJS</h4>
-            </div>
-          </article>
-          <article>
-            <i class="skill-icon fa-solid fa-screwdriver-wrench fa-xl"></i>
-            <div>
-              <h4>Git & Github</h4>
-            </div>
-          </article>
-        </div>
-        <div class="details-container">
-          <h3 class="skill-title database">Banco de Dados</h3>
-          <article>
-            <i class="skill-icon fa-solid fa-database fa-xl"></i>
-            <div>
-              <h4>MySQL</h4>
-            </div>
-          </article>
-          <article>
-            <i class="skill-icon fa-solid fa-database fa-xl"></i>
-            <div>
-              <h4>PostgreSQL</h4>
-            </div>
-          </article>
-          <article>
-            <i class="skill-icon fa-solid fa-database fa-xl"></i>
-            <div>
-              <h4>MongoDB</h4>
-            </div>
-          </article>
-          <article>
-            <i class="skill-icon fa-solid fa-database fa-xl"></i>
-            <div>
-              <h4>SQLite</h4>
-            </div>
-          </article>
+        <div id="about-description">
+          Atuo na área da programação desde fevereiro de 2023, prestando serviços freelances, já trabalhei com diferentes clientes em diferentes projetos e níveis de dificuldade. Domino tecnologias como Javascript, Go, Python, MySQL e muitas outras. Sou um desenvolvedor full-stack dedicado a construir projetos do zero, desde o planejamento e design até a solução de problemas do mundo real com código.
         </div>
       </div>
     </div>
     <a class="arrow fa-solid fa-angles-down fa-2xl" href="./#projects"></a>
   </section>
   <section id="projects">
-    <p class="projects-text1">Veja meus últimos</p>
-    <h2 class="title projects-title">Projetos</h2>
+    <p id="projects-text1">Veja meus últimos</p>
+    <h2 class="title" id="projects-title">Projetos</h2>
     <div class="projects-container">
       <div class="about-container">
         <div class="details-container color-container">
           <img src="" alt="Project-1" class="project-img" />
           <div class="project-description">
-            <h3 class="project-title">Projeto 1</h3>
+            <h3 class="project-title" id="project1">Projeto 1</h3>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'" target="_blank">Github</button>
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
@@ -245,7 +135,7 @@
         <div class="details-container color-container">
           <img src="" alt="Project-2" class="project-img" />
           <div class="project-description">
-            <h3 class="project-title">Projeto 2</h3>
+            <h3 class="project-title" id="project2">Projeto 2</h3>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'" target="_blank">Github</button>
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
@@ -255,7 +145,7 @@
         <div class="details-container color-container">
           <img src="" alt="Project-3" class="project-img" />
           <div class="project-description">
-            <h3 class="project-title">Projeto 3</h3>
+            <h3 class="project-title" id="project3">Projeto 3</h3>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'" target="_blank">Github</button>
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
@@ -267,8 +157,8 @@
     <a class="arrow fa-solid fa-angles-down fa-2xl" href="./#contacts"></a>
   </section>
   <section id="contacts">
-    <p class="contacts-text1">Entre em</p>
-    <h2 class="title contacts-title">Contato</h2>
+    <p id="contacts-text1">Entre em</p>
+    <h2 class="title" id="contacts-title">Contato</h2>
     <div class="contact-info-container">
       <div class="contact">
         <i class="contact-icon fa-solid fa-at fa-xl"></i>
@@ -288,14 +178,13 @@
     <nav>
       <div class="nav-links-container">
         <ul class="nav-links">
-          <li><a class="route" href="#about">/sobre</a></li>
-          <li><a class="route" href="#skills">/habilidades</a></li>
-          <li><a class="route" href="#projects">/projetos</a></li>
-          <li><a class="route" href="#contacts">/contato</a></li>
+          <li><a class="route" id="about-route" href="#about">/sobre-mim</a></li>
+          <li><a class="route" id="projects-route" href="#projects">/projetos</a></li>
+          <li><a class="route" id="contacts-route" href="#contacts">/contato</a></li>
         </ul>
       </div>
     </nav>
-    <p class="copyright">Copyright &#169; 2024 José Henrique. Todos os Direitos Reservados.</p>
+    <p id="copyright">Copyright &#169; 2024 José Henrique. Todos os Direitos Reservados.</p>
   </footer>
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/5850699e96.js" crossorigin="anonymous"></script>
