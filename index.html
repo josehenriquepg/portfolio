@@ -19,22 +19,25 @@
         <li><a class="route" id="projects-route" href="#projects">/projetos</a></li>
         <li><a class="route" id="contacts-route" href="#contacts">/contato</a></li>
         <li>
-          <input type="checkbox" class="checkbox" id="chk" />
-          <label class="label" for="chk">
-            <i class="fa-solid fa-moon fa-sm"></i>
-            <i class="fa-solid fa-sun fa-sm"></i>
-            <div class="ball"></div>
-          </label>
-        </li>
-        <li>
           <div class="language">
-            <select>
-              <option value="br">/português</option>
-              <option value="en">/english</option>
+            <select name="languages" id="select-language">
+              <option value="br">/BR</option>
+              <option value="en">/US</option>
             </select>
+            <div class="select-icon">
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
           </div>
         </li>
       </ul>
+    </div>
+    <div>
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+        <div class="ball"></div>
+      </label>
     </div>
   </nav>
   <nav id="nav-mobile">
@@ -50,6 +53,17 @@
         <li><a id="projects-route" href="#projects" onclick="toggleMenu()">/projetos</a></li>
         <li><a id="contacts-route" href="#contacts" onclick="toggleMenu()">/contato</a></li>
         <li>
+          <div class="language">
+            <select name="languages" id="select-language">
+              <option value="br">/BR</option>
+              <option value="en">/US</option>
+            </select>
+            <div class="select-icon">
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+        </li>
+        <li>
           <input type="checkbox" class="checkbox" id="chk" />
           <label class="label" for="chk">
             <i class="fa-solid fa-moon fa-sm"></i>
@@ -57,24 +71,17 @@
             <div class="ball"></div>
           </label>
         </li>
-        <li>
-          <div class="language">
-            <select>
-              <option value="br">/português</option>
-              <option value="en">/english</option>
-            </select>
-          </div>
-        </li>
+        
       </div>
     </div>
   </nav>
   <section id="profile">
-    <div class="pic-container">
+    <div class="profile-img">
       <img src="./assets/profile-pic.png" alt="Jose Henrique profile picture" />
     </div>
     <div class="profile-texts">
       <p class="profile-text1" id="profile-text1">Olá, eu sou o</p>
-      <h1 class="title">José Henrique</h1>
+      <h1 class="profile-title">José Henrique</h1>
       <p class="profile-text2" id="profile-text2">Desenvolvedor Full Stack</p>
       <p class="profile-text3" id="profile-text3">
         Sou um desenvolvedor full-stack dedicado a construir projetos do zero, desde o planejamento e design até a solução de problemas do mundo real com código. Domino tecnologias como Javascript, Go, Python, MySQL e muitas outras.
@@ -94,10 +101,10 @@
     </div>
   </section>
   <section id="about">
-    <p id="about-text1">Conheça mais</p>
+    <p class="section-text" id="about-text1">Conheça mais</p>
     <h2 class="title" id="about-title">Sobre mim</h2>
     <div class="section-container">
-      <div class="pic-container">
+      <div class="about-img">
         <img src="./assets/about-pic.png" alt="Profile picture" />
       </div>
       <div class="about-details">
@@ -116,12 +123,27 @@
         <div id="about-description">
           Atuo na área da programação desde fevereiro de 2023, prestando serviços freelances, já trabalhei com diferentes clientes em diferentes projetos e níveis de dificuldade.
         </div>
+        <div class="socials-container">
+          <i class='bx bxl-html5 bx-lg icon'></i>
+          <i class='bx bxl-css3 bx-lg icon'></i>
+          <i class='bx bxl-javascript bx-lg icon'></i>
+          <i class='bx bxl-go-lang bx-lg icon' ></i>
+          <i class='bx bxl-python bx-lg icon'></i>
+          <i class='bx bxl-typescript bx-lg icon' ></i>
+          <i class='bx bxl-angular bx-lg icon' ></i>
+          <i class='bx bxl-react bx-lg icon'></i>
+          <i class='bx bxl-nodejs bx-lg icon' ></i>
+          <i class='bx bxl-postgresql bx-lg icon' ></i>
+          <i class='bx bxl-mongodb bx-lg icon'></i>
+          <i class='bx bxl-git bx-lg icon' ></i>
+          <i class='bx bxl-github bx-lg icon' ></i>
+        </div>
       </div>
     </div>
     <a class="arrow fa-solid fa-angles-down fa-2xl" href="./#projects"></a>
   </section>
   <section id="projects">
-    <p id="projects-text1">Veja meus últimos</p>
+    <p class="section-text" id="projects-text1">Veja meus últimos</p>
     <h2 class="title" id="projects-title">Projetos</h2>
     <div class="projects-container">
       <div class="about-container">
@@ -160,7 +182,7 @@
     <a class="arrow fa-solid fa-angles-down fa-2xl" href="./#contacts"></a>
   </section>
   <section id="contacts">
-    <p id="contacts-text1">Entre em</p>
+    <p class="section-text" id="contacts-text1">Entre em</p>
     <h2 class="title" id="contacts-title">Contato</h2>
     <div class="contact-info-container">
       <div class="contact">
@@ -187,7 +209,7 @@
         </ul>
       </div>
     </nav>
-    <p id="copyright">Copyright &#169; 2024 José Henrique. Todos os Direitos Reservados.</p>
+    <p class="section-text" id="copyright">Copyright &#169; 2024 José Henrique. Todos os Direitos Reservados.</p>
   </footer>
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/5850699e96.js" crossorigin="anonymous"></script>
