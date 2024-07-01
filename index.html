@@ -71,7 +71,6 @@
             <div class="ball"></div>
           </label>
         </li>
-        
       </div>
     </div>
   </nav>
@@ -86,7 +85,7 @@
       <p class="profile-text3" id="profile-text3">
         Sou um desenvolvedor full-stack dedicado a construir projetos do zero, desde o planejamento e design até a solução de problemas do mundo real com código. Domino tecnologias como Javascript, Go, Python, MySQL e muitas outras.
       </p>
-      <!-- <div class="btn-container">
+      <div class="profile-btn">
         <button class="btn btn-color-2">
           Baixar CV
         </button>
@@ -94,50 +93,77 @@
           Contato
         </button>
       </div>
-      <div class="socials-container">
-        <a class="icon fa-brands fa-linkedin-in" href="https://www.linkedin.com/in/josehenriquepg/" target="_blank"></a>
-        <a class="icon fa-brands fa-github" href="https://github.com/josehenriquepg" target="_blank"></a>
-      </div> -->
     </div>
   </section>
   <section id="about">
     <p class="section-text" id="about-text1">Conheça mais</p>
     <h2 class="title" id="about-title">Sobre mim</h2>
-    <div class="section-container">
-      <div class="about-img">
-        <img src="./assets/about-pic.png" alt="Profile picture" />
-      </div>
+    <div class="about-container">
       <div class="about-details">
-        <div class="about-container">
+        <div class="about-experience">
           <div class="details-container">
-            <i class="about-icon fa-solid fa-award fa-2xl"></i>
-            <h3 id="experience">Experiência</h3>
-            <p id="experience-text">Desenvolvedor Full Stack</p>
+            <div class="card-title">
+              <i class="about-icon fa-solid fa-award fa-2xl"></i>
+              <h3 id="experience">Experiência</h3>
+            </div>
+            <p id="experience-text">
+              Desenvolvedor Full Stack - Atuo na área da programação desd e fevereiro de 2023, prestando serviços freelances, já trabalhei com diferentes clientes em diferentes projetos e níveis de dificuldade.
+            </p>
           </div>
           <div class="details-container">
-            <i class="about-icon fa-solid fa-user-graduate fa-2xl"></i>
-            <h3 id="education">Educação</h3>
+            <div class="card-title">
+              <i class="about-icon fa-solid fa-user-graduate fa-2xl"></i>
+              <h3 id="education">Educação</h3>
+            </div>          
             <p id="education-text">Técnico em Informática e Análise e Desenvolvimento de Sistemas</p>
           </div>
+          <div class="about-techs" data-speed="slow">
+            <ul class="tag-list scroller">
+              <li>
+                <i class='bx bxl-html5 bx-lg icon'></i>
+              </li>
+              <li>
+                <i class='bx bxl-css3 bx-lg icon'></i>
+              </li>
+              <li>
+                <i class='bx bxl-javascript bx-lg icon'></i>
+              </li>
+              <li>
+                <i class='bx bxl-go-lang bx-lg icon'></i>
+              </li>
+              <li>
+                <i class='bx bxl-python bx-lg icon'></i>
+              </li>
+              <li>
+                <i class='bx bxl-typescript bx-lg icon' ></i>
+              </li>
+              <li>
+                <i class='bx bxl-angular bx-lg icon' ></i>
+              </li>
+              <li>
+                <i class='bx bxl-react bx-lg icon'></i>
+              </li>
+              <li>
+                <i class='bx bxl-nodejs bx-lg icon' ></i>
+              </li>
+              <li>
+                <i class='bx bxl-postgresql bx-lg icon' ></i>
+              </li>
+              <li>
+                <i class='bx bxl-mongodb bx-lg icon'></i>
+              </li>
+              <li>
+                <i class='bx bxl-git bx-lg icon' ></i>
+              </li>
+              <li>
+                <i class='bx bxl-github bx-lg icon' ></i>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="about-description">
-          Atuo na área da programação desde fevereiro de 2023, prestando serviços freelances, já trabalhei com diferentes clientes em diferentes projetos e níveis de dificuldade.
-        </div>
-        <div class="socials-container">
-          <i class='bx bxl-html5 bx-lg icon'></i>
-          <i class='bx bxl-css3 bx-lg icon'></i>
-          <i class='bx bxl-javascript bx-lg icon'></i>
-          <i class='bx bxl-go-lang bx-lg icon' ></i>
-          <i class='bx bxl-python bx-lg icon'></i>
-          <i class='bx bxl-typescript bx-lg icon' ></i>
-          <i class='bx bxl-angular bx-lg icon' ></i>
-          <i class='bx bxl-react bx-lg icon'></i>
-          <i class='bx bxl-nodejs bx-lg icon' ></i>
-          <i class='bx bxl-postgresql bx-lg icon' ></i>
-          <i class='bx bxl-mongodb bx-lg icon'></i>
-          <i class='bx bxl-git bx-lg icon' ></i>
-          <i class='bx bxl-github bx-lg icon' ></i>
-        </div>
+      </div>
+      <div class="about-img">
+        <img src="./assets/about-pic.png" alt="Profile picture" />
       </div>
     </div>
     <a class="arrow fa-solid fa-angles-down fa-2xl" href="./#projects"></a>
@@ -146,7 +172,7 @@
     <p class="section-text" id="projects-text1">Veja meus últimos</p>
     <h2 class="title" id="projects-title">Projetos</h2>
     <div class="projects-container">
-      <div class="about-container">
+      <div class="projects">
         <div class="details-container color-container">
           <img src="" alt="Project-1" class="project-img" />
           <div class="project-description">

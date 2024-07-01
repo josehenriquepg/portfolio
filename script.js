@@ -12,6 +12,27 @@ chk.addEventListener("change", () => {
   document.body.classList.toggle("dark");
 })
 
+const scrollers = document.querySelectorAll(".about-techs");
+
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
+}
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    scroller.setAttribute("data-animated", true);
+
+    const scrollerInner = scroller.querySelector(".scroller");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
+
 const translations = {
   br: {
     aboutRoute : "/sobre-mim",
@@ -23,10 +44,9 @@ const translations = {
     aboutText : "Conheça mais",
     aboutTitle : "Sobre mim",
     xpTitle : "Experiência",
-    xpText : "Desenvolvedor Full Stack",
+    xpText : "Desenvolvedor Full Stack - Atuo na área da programação desde fevereiro de 2023, prestando serviços freelances, já trabalhei com diferentes clientes em diferentes projetos e níveis de dificuldade.",
     educationTitle : "Educação",
     educationText : "Técnico em Informática e Análise e Desenvolvimento de Sistemas",
-    aboutDescription : "Atuo na área da programação desde fevereiro de 2023, prestando serviços freelances, já trabalhei com diferentes clientes em diferentes projetos e níveis de dificuldade. ",
     projectsText : "Veja meus últimos",
     projectsTitle : "Projetos",
     contactsText : "Entre em",
@@ -42,10 +62,9 @@ const translations = {
     aboutText : "Get to know more",
     aboutTitle : "About me",
     xpTitle : "Experience",
-    xpText : "Full Stack Developer",
+    xpText : "Full Stack Developer - I have been working in the programming field since February 2023, providing freelance services, I have worked with different clients on different projects and difficulty levels.",
     educationTitle : "Education",
     educationText : "Computer Technician and Analysis and Systems Development",
-    aboutDescription : "I have been working in the programming field since February 2023, providing freelance services, I have worked with different clients on different projects and difficulty levels.",
     projectsText : "See my latest",
     projectsTitle : "Projects",
     contactsText : "Talk to me!",
@@ -53,7 +72,7 @@ const translations = {
   }
 }
 
-const langSelected = document.querySelector('select');
+const langSelected = document.querySelector("select");
 let routeAbout = document.querySelectorAll("#about-route");
 let routeProjects = document.querySelectorAll("#projects-route");
 let routeContacts = document.querySelectorAll("#contacts-route");
