@@ -163,10 +163,11 @@
         </div>
       </div>
       <div class="about-img">
-        <img src="./assets/about-pic.png" alt="Profile picture" />
+        <img src="./assets/about-pic.jpg" alt="Profile picture" />
       </div>
+      <a class="arrow fa-solid fa-angles-down fa-2xl" href="./#projects"></a>
     </div>
-    <a class="arrow fa-solid fa-angles-down fa-2xl" href="./#projects"></a>
+    
   </section>
   <section id="projects">
     <p class="section-text" id="projects-text1">Veja meus últimos</p>
@@ -210,11 +211,21 @@
   <section id="contacts">
     <p class="section-text" id="contacts-text1">Entre em</p>
     <h2 class="title" id="contacts-title">Contato</h2>
-    <div class="contact-info-container">
-      <div class="contact">
-        <i class="contact-icon fa-solid fa-at fa-xl"></i>
-        <p><a href="mailto:hpereira012@gmail.com" target="_blank">hpereira012@gmail.com</a></p>
-      </div>
+    <div class="contacts-container">
+      <form class="contact-form" action="https://formsubmit.co/hpereira012@gmail.com" method="POST">
+        <p>Nome:</p>
+        <input class="field" name="name" required>
+        
+        <p>Email:</p>
+        <input class="field" name="email" required>
+        
+        <p>Mensagem:</p>
+        <textarea class="field" name="message" placeholder="..."></textarea>
+        
+        <button class="btn-form btn-color-2" type="submit">Enviar</button>
+      </form>
+    </div>
+    <div class="socials">
       <div class="contact">
         <i class="contact-icon fa-brands fa-linkedin-in fa-xl"></i>
         <p><a href="https://www.linkedin.com/in/josehenriquepg/" target="_blank">Linkedin</a></p>
