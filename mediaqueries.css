@@ -10,11 +10,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-  #skills,
-  .skills-container {
-    margin-top: 32px;
-  }
-  
   #profile,
   .section-container {
     display: block;
@@ -33,10 +28,26 @@
     margin: 0 5%;
   }
   
-  .pic-container {
+  .profile-img,
+  .about-img {
     width: 275px;
     height: 275px;
-    margin: 0 auto 32px;
+    margin: 32px auto;
+  }
+
+  .profile-texts {
+    align-items: center;
+  }
+
+  .profile-text1,
+  .profile-text2,
+  .profile-text3,
+  .profile-title {
+    text-align: center;
+  }
+
+  .profile-btn {
+    justify-content: center;
   }
   
   .about-container {
@@ -52,6 +63,13 @@
   #nav-mobile {
     display: flex;
   }
+
+  #profile,
+  #about,
+  #projects,
+  #contacts {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -60,11 +78,14 @@
     height: 40vh;
   }
   
-  #profile {
-    height: 83vh;
+  #profile,
+  #about,
+  #projects,
+  #contacts {
+    height: auto;
     margin-bottom: 0;
   }
-  
+
   article {
     font-size: 16px;
   }
@@ -89,10 +110,6 @@
     font-size: 16px;
   }
   
-  .skill-title {
-    font-size: 20px;
-  }
-  
   .logo {
     font-size: 24px;
   }
@@ -103,16 +120,18 @@
     text-align: center;
   }
   
-  .pic-container {
+  .profile-img,
+  .about-img {
     width: auto;
     height: 46vw;
     justify-content: center;
   }
   
-  .text-p2 {
+  .profile-text2 {
     font-size: 20px;
   }
-  
+
+  .profile-title,
   .title {
     font-size: 32px;
   }
