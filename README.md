@@ -6,6 +6,7 @@ Telling you a little about myself, my skills and my experiences.
 - Responsive.
 - Dark/Light Mode.
 - Multiple languages - Portuguese and English.
+- Contact.
 ## 💻 Technologies used
 [![techs](https://skillicons.dev/icons?i=html,css,js&theme=dark)](https://skillicons.dev)
 ## 🤝 Collaborators 
