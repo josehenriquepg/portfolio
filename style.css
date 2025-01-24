@@ -45,12 +45,12 @@ article {
 }
 
 /* nav desktop */
-nav,
+header,
 .nav-links {
   display: flex;
 }
 
-nav {
+header {
   justify-content: space-around;
   align-items: center;
   height: 100px;
@@ -185,19 +185,10 @@ section {
   flex-wrap: wrap;
 }
 
-
 /* icons */
 .icon {
   color: #52b788;
   text-decoration: none;
-}
-
-.devicon-java-plain-wordmark,
-.devicon-spring-original-wordmark, 
-.devicon-mysql-plain-wordmark, 
-.devicon-postgresql-plain-wordmark, 
-.devicon-mongodb-plain-wordmark {
-  font-size: 90px;
 }
 
 /* buttons */
@@ -381,14 +372,6 @@ section {
   padding: 24px;
   position: relative;
   list-style-type: none;
-}
-
-li label {
-  position: absolute;
-  top: -12px;
-  left: 12px;
-  padding: 0 5px;
-  background: #f8f8f6;
 }
 
 /* contact section */
