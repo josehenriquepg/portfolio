@@ -12,8 +12,8 @@
 }
 
 body {
-  background: #edf2f4;
-  color: #262626;
+  background: #222831;
+  color: #F2EFE7;
   transition: background 0.2s linear;
 }
 
@@ -72,7 +72,7 @@ header {
 }
 
 .route {
-  color: #262626;
+  color: #ECDFCC;
   text-decoration: none;
 }
 
@@ -100,7 +100,7 @@ header {
 }
 
 .label .ball {
-  background-color: #f8f8f6;
+  background-color: #ECDFCC;
   border-radius: 50%;
   position: absolute;
   top: 2px;
@@ -138,7 +138,7 @@ header {
   border: none;
   appearance: none;
   padding: 0 30px 0 10px;
-  color: #262626;
+  color: #F2EFE7;
   cursor: pointer;
   background: transparent;
   transition: all 300ms ease;
@@ -159,11 +159,11 @@ header {
 }
 
 option {
-  background-color: #f8f8f6;
+  background-color: #31363F;
 }
 
 .language select:hover {
-  color: #939498;
+  color: #76ABAE;
 }
 
 /* sections */
@@ -191,54 +191,6 @@ section {
   text-decoration: none;
 }
 
-/* buttons */
-.profile-btn {
-  display: flex;
-  padding-top: 32px;
-  gap: 16px;
-}
-
-.btn {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 16px;
-  width: 128px;
-  border-radius: 25px;
-}
-
-.btn-color-2 {
-  border: #363636 1px solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: #52b788;
-  color: #f8f8f6;
-}
-
-.btn-color-1:hover {
-  background: #363636;
-  border: #363636 1px solid;
-}
-
-.btn-color-2 {
-  background: none;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  border: #52b788 1px solid;
-}
-
-.btn-container {
-  gap: 16px;
-}
-
 /* about section */
 .about-container {
   display: grid;
@@ -258,25 +210,6 @@ section {
   justify-content: start;
   gap: 8px;
   padding: 16px;
-}
-
-.about-icon {
-  margin: 24px 0;
-  color: #52b788;
-  text-decoration: none;
-}
-
-.about-img {
-  padding: 32px 0;
-}
-
-.about-img img {
-  border: #52b788 8px solid;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  border-radius: 50%;
-  width: 370px;
-  height: 370px;
 }
 
 .about-techs {
@@ -341,87 +274,11 @@ section {
   border-radius: 8px;
 }
 
-.arrow {
-  position: absolute;
-  right: -60px;
-  bottom: 40px;
-  cursor: pointer;
-  color: #081c15;
-  text-decoration: none;
-}
-
-.details-container {
-  padding: 24px;
-  flex: 1;
-  background: #f8f8f6;
-  border: #939498 1px solid;
-  border-radius: 32px;
-}
-
-.section-container {
-  gap: 64px;
-  height: 80%;
-}
-
-.skills-container {
-  justify-content: center;
-  background: #f8f8f6;
-  border: #939498 1px solid;
-  border-radius: 8px;
-  margin: 18px 0 12px;
-  padding: 24px;
-  position: relative;
-  list-style-type: none;
-}
-
-/* contact section */
-#contacts {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.contacts-container {
-  border-radius: 32px;
-  background: #f8f8f6;
-  border: #939498 1px solid;
-  margin: 32px auto;
-  padding: 32px;
-  width: 500px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-textarea {
-  resize: none;
-}
-
-.field {
-  background-color: #edf2f4;
-  border: none;
-  border-radius: 8px;
-  color: #363636;
-  font-size: 16px;
-  outline: none;
-  padding: 8px;
-  width: 100%;
-}
-
-.btn-form {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 8px;
-  width: 88px;
-  border-radius: 25px;
-  align-self: self-end;
-}
+/* contact */
 
 .socials {
   display: flex;
+  margin: 32px;
   justify-content: center;
   align-items: center;
   gap: 16px;
@@ -436,74 +293,22 @@ textarea {
 
 .contact p>a {
   font-size: 20px;
-  color: #262626;
+  color: #F2EFE7;
   text-decoration: none;
   cursor: pointer;
 }
 
 .contact p>a:hover {
-  color: #939498;
+  color: #76ABAE;
 }
 
 .contact-icon {
   cursor: default;
-  color: #52b788;
+  color: #76ABAE;
 }
 
 /* footer */
 footer {
   height: 26vh;
   margin: 0 16px;
-}
-
-/* dark mode */
-.dark {
-  background: #262626;
-  color: #f8f8f6;
-}
-
-.dark .route,
-.dark .arrow,
-.dark .skill-title,
-.dark .project-title,
-.dark .language select {
-  color: #f8f8f6;
-}
-
-.dark .hamburger-icon span {
-  background: #f8f8f6;
-}
-
-.dark .btn-color-2 {
-  color: #f8f8f6;
-  border: #939498 1px solid;
-}
-
-.dark .btn-color-2:hover {
-  border: #52b788 1px solid;
-}
-
-.dark option {
-  background: #363636;
-}
-
-.dark .language select:hover,
-.dark .route:hover,
-.dark .contact p>a:hover,
-.dark .arrow:hover {
-  color: #c3c4c8;
-}
-
-.dark .details-container,
-.dark .contacts-container {
-  background: #363636;
-  border: none;
-}
-
-.dark .project-description {
-  border-top: #939498 1px solid;
-}
-
-.dark .contact p>a {
-  color: #f8f8f6;
 }
